@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5 {
 .styled h1 {
     text-align: center;
     font-family: "Montserrat", "Noto Sans", Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 header {
