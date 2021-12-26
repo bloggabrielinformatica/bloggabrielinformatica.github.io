@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fontes/Montserrat-Regular.ttf) format("truetype");
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+.styled {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.styled h1 {
+    text-align: center;
+    font-family: "Montserrat", "Noto Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: linear-gradient(to top, #020060, #546CB7, #6B8AC7, white);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    background-color: #020060;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #020060;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside {
+    flex: 30%;
+    background-color: #e7e7e7;
+    color: black;
+    padding: 20px;
+}
+
+.aside h3 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.posts {
+    flex: 70%;
+    background-color: white;
+    columns: black;
+    padding: 20px;
+    text-align: justify;
+}
+
+.imagem img {
+    border: 2px solid #020060;
+    text-align: center;
+}
+
+.fakeimg2 {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+}
+
+.img > img {
+    border: 2px solid #020060;
+    text-align: center;
+}
+
+.fakeimg2#redes-sociais, .fakeimg2#categorias , .fakeimg2#paginas-site {
+    text-align: center;
+}
+
+.fakeimg2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.fakeimg2 a.redes-sociais {
+    color: black;
+    text-decoration: none;
+}
+
+.fakeimg2 {
+    margin: 20px 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.p1, .p2, .p3 {
+    background-color: #e7e7e7;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border: 2px solid #020060;
+}
+
+.p1 img, .p2 img, .p3 img {
+    border: 2px solid #020060;
+}
+
+.p1 h3, .p2 h3, .p3 h3 {
+    color: black;
+    font-weight: normal;
+}
+
+button {
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    margin: 10px 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #e7e7e7;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    background-color: #020060;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .grid > .p1, .grid > .p2, .grid > .p3 {
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
