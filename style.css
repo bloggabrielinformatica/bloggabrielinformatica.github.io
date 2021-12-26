@@ -10,7 +10,7 @@ body {
 
 @font-face {
     font-family: "Montserrat";
-    src: url(fontes/Montserrat-Regular.ttf) format("truetype");
+    src: url(Montserrat-Regular.ttf) format("truetype");
 }
 
 h1, h2, h3, h4, h5 {
